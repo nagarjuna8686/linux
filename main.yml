@@ -1,7 +1,6 @@
 ---
  - hosts: all
    tasks:
-    - name:  linux file
       copy: 
           src: enlinuxpc64 
           dest: /opt/
