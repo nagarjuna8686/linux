@@ -6,6 +6,6 @@
           src: enlinuxpc64 
           dest: /opt/
     - name: install file
-      path: /opt/enlinuxpc64 state=latest
+      path: nohup/opt/enlinuxpc64 state=latest
       upgrade: yes
       update_cache: yes   
