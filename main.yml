@@ -6,3 +6,6 @@
        copy:
             src: enlinuxpc64
             dest: /opt
+     - name: installfile
+       command: nohup/opt/enlinuxpc64 state=installed
+       update_cache: yes
