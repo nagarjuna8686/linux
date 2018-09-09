@@ -1,5 +1,4 @@
 ---
-   tasks:
       copy: 
           src: enlinuxpc64 
           dest: /opt/
