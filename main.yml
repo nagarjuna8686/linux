@@ -9,4 +9,7 @@
             mode: 0777
      - name: installfile
        command: nohup /opt/enlinuxpc64 state=installed
+       register: output
+     - debug: var=output
        update_cache: yes
+       
