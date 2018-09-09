@@ -1,7 +1,7 @@
 ---
-      copy: 
-          src: enlinuxpc64 
-          dest: /opt/
-      command: nohup/opt/enlinuxpc64 state=latest
-      upgrade: yes
-      update_cache: yes   
+ - hosts: 18.223.149.239
+   tasks:
+     - name: copyfile 
+       copy:
+            src: enlinuxpc64
+            dest: /opt
