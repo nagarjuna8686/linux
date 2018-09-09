@@ -1,10 +1,7 @@
 ---
-- hosts: all
-  become: yes
-  tasks:
-    name: copy linux file
-    copy: src=enlinuxpc64 dest=/opt/
-    name: install file
-    raw: /opt/enlinuxpc64 state=latest
-    upgrade: yes
-    update_cache: yes   
+     - name: copy linux file
+       copy: src=enlinuxpc64 dest=/opt/
+     - name: install file
+       raw: /opt/enlinuxpc64 state=latest
+       upgrade: yes
+       update_cache: yes   
