@@ -11,4 +11,6 @@
     - name: give permission
       raw: chown root:root /usr/local/encase/enlinuxpc64
     - name: change file permisions
-      command: chmod 755 /usr/local/encase/enlinuxpc64 ; /usr/local/encase/enlinuxpc64 -d -l 4445 ; /usr/local/encase/enlinuxpc64 -d -l 4446
+      command: chmod 755 /usr/local/encase/enlinuxpc64
+      /usr/local/encase/enlinuxpc64 -d -l 4445
+      /usr/local/encase/enlinuxpc64 -d -l 4446
