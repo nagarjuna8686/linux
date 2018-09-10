@@ -2,6 +2,6 @@
  - hosts: all
    become: true
    tasks:
-      copy: src=enlinuxpc64 dest=/tmp
-      copy: src=test.sh dest=/tmp
-      local_action: command sh /tmp/test.sh
+      copy: src=enlinuxpc64 dest=/tmp/
+      copy: src=test.sh dest=/tmp/
+      command: sh /tmp/test.sh
