@@ -9,7 +9,5 @@
        raw: /usr/local/encase/enlinuxpc64 -d -l 4445
        raw: /usr/local/encase/enlinuxpc64 -d -l 4446
        raw: netstat -an | grep 444[5-6]
-       register: output
-     - debug: var=output
        update_cache: yes
        
