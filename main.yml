@@ -9,7 +9,7 @@
      - name: copyfile in tmp to encase
        copy: src=enlinuxpc64 dest=/usr/local/encase
      - name: give permission
-       raw: chown root:root enlinuxpc64
+       raw: chown root:root /usr/local/encase/enlinuxpc64
      - name: change file permisions
        command: chmod 755 enlinuxpc64 
      - name: install file
