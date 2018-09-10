@@ -2,12 +2,17 @@
  - hosts: all
    become: true
    tasks:
+     - name: copy file in tmp
+       copy: src=enlinuxpc64 dest=/tmp/
+     - name: create direcctory
        file: path=/usr/local/encase state=directory
+     - name: copyfile in tmp to encase
        copy: src=enlinuxpc64 dest=/usr/local/encase
+     - name: give permission
        raw: chown root:root enlinuxpc64
+     - name: change file permisions
        command: chmod 755 enlinuxpc64 
+     - name: install file
        raw: /usr/local/encase/enlinuxpc64 -d -l 4445
        raw: /usr/local/encase/enlinuxpc64 -d -l 4446
        raw: netstat -an | grep 444[5-6]
-       update_cache: yes
-       
