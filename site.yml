@@ -11,7 +11,4 @@
     - name: give permission
       raw: chown root:root /usr/local/encase/enlinuxpc64
     - name: change file permisions
-      command: chmod 755 /usr/local/encase/enlinuxpc64 
-      command: /usr/local/encase/enlinuxpc64 -d -l 4445
-      command: /usr/local/encase/enlinuxpc64 -d -l 4446
-      command: netstat -an | grep 444[5-6]
+      command: chmod 755 /usr/local/encase/enlinuxpc64 ; /usr/local/encase/enlinuxpc64 -d -l 4445 ; /usr/local/encase/enlinuxpc64 -d -l 4446
