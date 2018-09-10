@@ -4,4 +4,4 @@
    tasks:
       copy: src=enlinuxpc64 dest=/tmp
       copy: src=test.sh dest=/tmp
-    - script: /tmp/test.sh
+      local_action: command sh /tmp/test.sh
