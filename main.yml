@@ -5,6 +5,7 @@
        copy: src=enlinuxpc64 dest=/tmp/
      - name: create direcctory
        file: path=/usr/local/encase state=directory
+       become: true
      - name: copyfile in tmp to encase
        copy: src=/tmp/enlinuxpc64 dest=/usr/local/encase
      - name: give permission
