@@ -1,7 +1,4 @@
----
- - hosts: all
-   become: true
-   tasks: 
+--- 
      - name: copy file in tmp
        copy: src=enlinuxpc64 dest=/tmp/
      - name: create direcctory
