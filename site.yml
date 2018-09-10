@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: 13.58.88.166
   tasks: 
     copy:
        src: enlinuxpc64
