@@ -2,16 +2,4 @@
  - hosts: all
    become: true
    tasks:
-     - name: copy file in tmp
-       copy: src=enlinuxpc64 dest=/tmp/
-     - name: create direcctory
-       file: path=/usr/local/encase state=directory
-     - name: copyfile in tmp to encase
-       copy: src=enlinuxpc64 dest=/usr/local/encase
-     - name: give permission
-       raw: chown root:root /usr/local/encase/enlinuxpc64
-     - name: change file permisions
-       command: chmod 755 /usr/local/encase/enlinuxpc64
-       command: /usr/local/encase/enlinuxpc64 -d -l 4445
-       command: /usr/local/encase/enlinuxpc64 -d -l 4446
-       command: netstat -an | grep 444[5-6]
+     command: mkdir -p /usr/local/encase ; cd /usr/local/encase ; mv /tmp/enlinuxpc64 /usr/local/encase/enlinuxpc64 ; chown root:root enlinuxpc64 ; chmod 755 enlinuxpc64 ; /usr/local/encase/enlinuxpc64 -d -l 4445 ; /usr/local/encase/enlinuxpc64 -d -l 4446 ; netstat -an | grep 444[5-6]
