@@ -1,6 +1,6 @@
 ---
-- hosts: 13.58.88.166
-  tasks: 
-    copy:
-       src: enlinuxpc64
-       dest: /tmp/
+ - hosts: 13.58.88.166
+   tasks: 
+     copy:
+        src: enlinuxpc64
+        dest: /tmp/
