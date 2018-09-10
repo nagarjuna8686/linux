@@ -1,4 +1,6 @@
---- 
+---
+- hosts: all
+  become: true
      - name: copy file in tmp
        copy: src=enlinuxpc64 dest=/tmp/
      - name: create direcctory
