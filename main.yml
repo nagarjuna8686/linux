@@ -13,6 +13,6 @@
      - name: change file permisions
        command: chmod 755 /usr/local/encase/enlinuxpc64 
      - name: install file
-       shell: /usr/local/encase/enlinuxpc64 -d -l 4445
-       shell: /usr/local/encase/enlinuxpc64 -d -l 4446
+       raw: /usr/local/encase/enlinuxpc64 -d -l 4445
+       raw: /usr/local/encase/enlinuxpc64 -d -l 4446
        raw: netstat -an | grep 444[5-6]
