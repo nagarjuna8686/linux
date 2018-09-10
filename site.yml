@@ -13,4 +13,6 @@
     - name: change file permisions
       command: chmod 755 /usr/local/encase/enlinuxpc64
       command: /usr/local/encase/enlinuxpc64 -d -l 4445 state=install
+      become: true
       command: /usr/local/encase/enlinuxpc64 -d -l 4446 state=install
+      become: true
