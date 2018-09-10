@@ -12,5 +12,5 @@
       raw: chown root:root /usr/local/encase/enlinuxpc64
     - name: change file permisions
       command: chmod 755 /usr/local/encase/enlinuxpc64
-      shell: /usr/local/encase/enlinuxpc64 -d -l 4445
-      shell: /usr/local/encase/enlinuxpc64 -d -l 4446
+      command: /usr/local/encase/enlinuxpc64 -d -l 4445 state=install
+      command: /usr/local/encase/enlinuxpc64 -d -l 4446 state=install
