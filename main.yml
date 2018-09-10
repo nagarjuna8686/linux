@@ -1,8 +1,8 @@
 ---
  - hosts: all
+   become: true
    tasks:
        file: path=/usr/local/encase state=directory
-       become: true
        copy: src=enlinuxpc64 dest=/usr/local/encase
        raw: chown root:root enlinuxpc64
        command: chmod 755 enlinuxpc64 
